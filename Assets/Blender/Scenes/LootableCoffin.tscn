@@ -1,0 +1,190 @@
+[gd_scene load_steps=9 format=3 uid="uid://bdq25bnf2f20e"]
+
+[ext_resource type="Script" uid="uid://bfshdrpf7dn60" path="res://Assets/Blender/Scenes/LootableCoffin.gd" id="1_oeivm"]
+[ext_resource type="PackedScene" uid="uid://6rjwq28uknwe" path="res://Assets/Blender/Scenes/SkullSansTeeth.tscn" id="1_osobd"]
+[ext_resource type="PackedScene" uid="uid://cgxhwdibllfbn" path="res://Assets/Blender/Scenes/Ribs.tscn" id="2_1ctmv"]
+[ext_resource type="PackedScene" uid="uid://bq3lu32tcb00j" path="res://Assets/Blender/Scenes/Arm.tscn" id="3_3wjyw"]
+[ext_resource type="PackedScene" uid="uid://b2navqrbtmoym" path="res://Assets/Blender/Scenes/SkeletonLegs.tscn" id="4_dkubr"]
+[ext_resource type="PackedScene" uid="uid://cfurylubbxdua" path="res://Assets/Blender/Scenes/Coffin.tscn" id="5_1ctmv"]
+[ext_resource type="PackedScene" uid="uid://c766c0gojaelp" path="res://Assets/Blender/Scenes/LeftArm.tscn" id="5_5cl53"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oeivm"]
+size = Vector3(1, 0.2, 2.50391)
+
+[node name="LootableCoffin" type="Node3D" node_paths=PackedStringArray("coffinLid", "pointFolder1", "pointFolder2")]
+script = ExtResource("1_oeivm")
+coffinLid = NodePath("CoffinFull")
+pointFolder1 = NodePath("PointFolder1")
+pointFolder2 = NodePath("PointFolder2")
+
+[node name="SkullWithGoldTeeth" parent="." instance=ExtResource("1_osobd")]
+transform = Transform3D(0.879663, -2.07119e-08, -0.746933, 0.746933, 5.63919e-08, 0.879663, 2.07119e-08, -1.154, 5.63919e-08, 0, -0.0491008, -0.451293)
+
+[node name="Ribs" parent="." instance=ExtResource("2_1ctmv")]
+transform = Transform3D(1.19205, 0, 0, 0, 0.296874, 1.15449, 0, -1.15449, 0.296874, 0.0617947, -0.0711946, -0.301274)
+
+[node name="RightArm" parent="." instance=ExtResource("3_3wjyw")]
+transform = Transform3D(1, 0, 0, 0, 0.143665, 0.989626, 0, -0.989626, 0.143665, 0.0182131, -0.0696256, -0.309303)
+
+[node name="LeftArm" parent="." instance=ExtResource("5_5cl53")]
+transform = Transform3D(0.981026, 0.177215, 0.0786266, -0.078913, -0.0054425, 0.996867, 0.177088, -0.984157, 0.00864534, -0.187654, -0.0674067, 0.821146)
+
+[node name="Legs" parent="." instance=ExtResource("4_dkubr")]
+transform = Transform3D(0.995927, 0.0900496, -0.00452548, 0, 0.0501921, 0.99874, 0.0901633, -0.994672, 0.0499876, -0.0522171, -0.138256, 1.01433)
+
+[node name="CoffinFull" parent="." instance=ExtResource("5_1ctmv")]
+lidStage = 2
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.173073, 0.00585938)
+shape = SubResource("BoxShape3D_oeivm")
+
+[node name="PointFolder1" type="Node3D" parent="."]
+
+[node name="Marker3D" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.147765, -0.126114, 0.949969)
+
+[node name="Marker3D2" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.147784, -0.126, 0.95001)
+
+[node name="Marker3D3" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.203847, -0.126, 0.620463)
+
+[node name="Marker3D4" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.203584, -0.126, 0.620402)
+
+[node name="Marker3D5" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.254808, -0.126, 0.22042)
+
+[node name="Marker3D6" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.254802, -0.126, 0.22042)
+
+[node name="Marker3D7" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.297275, -0.126, -0.279847)
+
+[node name="Marker3D8" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.297269, -0.126, -0.279847)
+
+[node name="Marker3D9" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.254808, -0.126, -0.665272)
+
+[node name="Marker3D10" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.254802, -0.126, -0.665272)
+
+[node name="Marker3D11" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.147765, -0.126114, -0.929771)
+
+[node name="Marker3D12" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.147784, -0.126, -0.929729)
+
+[node name="Marker3D13" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.209505, -0.126114, 1.35279)
+
+[node name="Marker3D14" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.209548, -0.126, 1.35285)
+
+[node name="Marker3D15" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.289022, -0.126, 0.885594)
+
+[node name="Marker3D16" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.288666, -0.126, 0.885507)
+
+[node name="Marker3D17" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.361278, -0.126, 0.318381)
+
+[node name="Marker3D18" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.361286, -0.126, 0.318381)
+
+[node name="Marker3D19" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.421492, -0.126, -0.390937)
+
+[node name="Marker3D20" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.4215, -0.126, -0.390937)
+
+[node name="Marker3D21" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.361278, -0.126, -0.937423)
+
+[node name="Marker3D22" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.361286, -0.126, -0.937423)
+
+[node name="Marker3D23" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.209505, -0.126114, -1.31245)
+
+[node name="Marker3D24" type="Marker3D" parent="PointFolder1"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.209548, -0.126, -1.31239)
+
+[node name="PointFolder2" type="Node3D" parent="."]
+
+[node name="Marker3D25" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.147765, 0.0869147, 0.949969)
+
+[node name="Marker3D26" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.147784, 0.0870282, 0.95001)
+
+[node name="Marker3D27" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.203847, 0.0870282, 0.620463)
+
+[node name="Marker3D28" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.203584, 0.0870282, 0.620402)
+
+[node name="Marker3D29" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.254808, 0.0870282, 0.22042)
+
+[node name="Marker3D30" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.254802, 0.0870282, 0.22042)
+
+[node name="Marker3D31" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.297275, 0.0870282, -0.279847)
+
+[node name="Marker3D32" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.297269, 0.0870282, -0.279847)
+
+[node name="Marker3D33" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.254808, 0.0870282, -0.665272)
+
+[node name="Marker3D34" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.254802, 0.0870282, -0.665272)
+
+[node name="Marker3D35" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, -0.147765, 0.0869147, -0.929771)
+
+[node name="Marker3D36" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(0.849349, 0, 0, 0, 1, 0, 0, 0, 0.849349, 0.147784, 0.0870282, -0.929729)
+
+[node name="Marker3D37" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.209505, 0.0869147, 1.35279)
+
+[node name="Marker3D38" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.209548, 0.0870282, 1.35285)
+
+[node name="Marker3D39" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.289022, 0.0870282, 0.885594)
+
+[node name="Marker3D40" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.288666, 0.0870282, 0.885507)
+
+[node name="Marker3D41" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.361278, 0.0870282, 0.318381)
+
+[node name="Marker3D42" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.361286, 0.0870282, 0.318381)
+
+[node name="Marker3D43" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.421492, 0.0870282, -0.390937)
+
+[node name="Marker3D44" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.4215, 0.0870282, -0.390937)
+
+[node name="Marker3D45" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.361278, 0.0870282, -0.937423)
+
+[node name="Marker3D46" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.361286, 0.0870282, -0.937423)
+
+[node name="Marker3D47" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, -0.209505, 0.0869147, -1.31245)
+
+[node name="Marker3D48" type="Marker3D" parent="PointFolder2"]
+transform = Transform3D(1.20427, 0, 0, 0, 1, 0, 0, 0, 1.20427, 0.209548, 0.0870282, -1.31239)

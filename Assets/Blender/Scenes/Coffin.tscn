@@ -1,0 +1,126 @@
+[gd_scene load_steps=6 format=3 uid="uid://cfurylubbxdua"]
+
+[ext_resource type="PackedScene" uid="uid://cufxns76f0d2d" path="res://Assets/Blender/Coffins/CoffinFull.glb" id="1_1jcd7"]
+[ext_resource type="Script" uid="uid://dkbuie0a3a62n" path="res://CoffinLid.gd" id="2_oncs2"]
+[ext_resource type="Material" uid="uid://dgcmjwg1tvdog" path="res://Assets/Blender/Coffins/CoffinTry2.tres" id="3_mnc4q"]
+[ext_resource type="Texture2D" uid="uid://bhibfrsw6ju0a" path="res://Assets/Blender/Coffins/FirstTry/WoodPlank_albedo.png" id="4_f5wki"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lcmus"]
+albedo_texture = ExtResource("4_f5wki")
+uv1_scale = Vector3(0.555, 0.555, 0.555)
+uv1_offset = Vector3(0.02, 0, 0.415)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 1.7411
+
+[node name="CoffinFull" node_paths=PackedStringArray("planksFirstStage", "planksSecondStage") instance=ExtResource("1_1jcd7")]
+script = ExtResource("2_oncs2")
+planksFirstStage = [NodePath("board_000"), NodePath("board_001"), NodePath("board_002")]
+planksSecondStage = [NodePath("coffin_plank"), NodePath("coffin_plank_002"), NodePath("coffin_plank_003"), NodePath("coffin_plank_004"), NodePath("coffin_plank_005"), NodePath("coffin_plank_027"), NodePath("coffin_plank_028")]
+
+[node name="coffin_plank" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0122413, 0)
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_001" parent="." index="1"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="board_000" parent="." index="2"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_003" parent="." index="3"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_004" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00808686, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_lcmus")
+
+[node name="coffin_plank_005" parent="." index="5"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_006" parent="." index="6"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_007" parent="." index="7"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_008" parent="." index="8"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_009" parent="." index="9"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_010" parent="." index="10"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_011" parent="." index="11"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_012" parent="." index="12"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_013" parent="." index="13"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_014" parent="." index="14"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_015" parent="." index="15"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_016" parent="." index="16"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_017" parent="." index="17"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_018" parent="." index="18"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_019" parent="." index="19"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_020" parent="." index="20"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_021" parent="." index="21"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_022" parent="." index="22"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="board_001" parent="." index="23"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="board_002" parent="." index="24"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_002" parent="." index="25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00802338, 0)
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_027" parent="." index="26"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_028" parent="." index="27"]
+surface_material_override/0 = SubResource("StandardMaterial3D_lcmus")
+
+[node name="coffin_plank_023" parent="." index="28"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_024" parent="." index="29"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_025" parent="." index="30"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_026" parent="." index="31"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_029" parent="." index="32"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_030" parent="." index="33"]
+surface_material_override/0 = ExtResource("3_mnc4q")
+
+[node name="coffin_plank_031" parent="." index="34"]
+surface_material_override/0 = ExtResource("3_mnc4q")

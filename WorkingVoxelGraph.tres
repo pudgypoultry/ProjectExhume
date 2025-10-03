@@ -1,0 +1,81 @@
+[gd_resource type="VoxelGeneratorGraph" load_steps=2 format=3 uid="uid://c314i3mmsiyb3"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_tamvd"]
+
+[resource]
+graph_data = {
+"connections": [[11, 0, 9, 0], [2, 0, 20, 1], [18, 0, 7, 0], [5, 0, 8, 0], [7, 0, 5, 1], [7, 0, 20, 0], [8, 0, 4, 0], [8, 0, 12, 0], [20, 0, 21, 0], [21, 0, 11, 2]],
+"nodes": {
+"1": {
+"gui_position": Vector2(140, 140),
+"type": "InputX"
+},
+"11": {
+"a": 0.0,
+"b": 1.0,
+"gui_position": Vector2(1320, 480),
+"threshold": 0.4,
+"type": "Select"
+},
+"12": {
+"fraction_period": 10.0,
+"gui_position": Vector2(1260, 220),
+"max_value": 1.0,
+"min_value": -1.0,
+"mode": 1,
+"type": "SdfPreview"
+},
+"18": {
+"auto_connect": true,
+"gui_position": Vector2(480, 120),
+"noise": SubResource("FastNoiseLite_tamvd"),
+"type": "Noise3D",
+"x": 0.0,
+"y": 0.0,
+"z": 0.0
+},
+"2": {
+"gui_position": Vector2(140, 240),
+"type": "InputY"
+},
+"20": {
+"gui_position": Vector2(960, 480),
+"type": "Subtract"
+},
+"21": {
+"gui_position": Vector2(1140, 480),
+"type": "Abs"
+},
+"3": {
+"gui_position": Vector2(140, 340),
+"type": "InputZ"
+},
+"4": {
+"auto_connect": true,
+"gui_position": Vector2(1260, 120),
+"type": "OutputSDF"
+},
+"5": {
+"auto_connect": true,
+"gui_position": Vector2(860, 120),
+"type": "SdfPlane",
+"y": 0.0
+},
+"7": {
+"b": 2.5,
+"gui_position": Vector2(680, 120),
+"type": "Multiply"
+},
+"8": {
+"gui_position": Vector2(1080, 120),
+"max": 0.5,
+"min": -0.5,
+"type": "Clamp"
+},
+"9": {
+"gui_position": Vector2(1540, 480),
+"type": "OutputSingleTexture"
+}
+},
+"version": 2
+}

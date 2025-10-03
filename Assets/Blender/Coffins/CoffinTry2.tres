@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dgcmjwg1tvdog"]
+
+[ext_resource type="Texture2D" uid="uid://bhibfrsw6ju0a" path="res://Assets/Blender/Coffins/FirstTry/WoodPlank_albedo.png" id="1_vkeot"]
+[ext_resource type="Texture2D" uid="uid://6jylkfmslap7" path="res://Assets/Blender/Coffins/FirstTry/WoodPlank_heightmap.png" id="2_hoej3"]
+[ext_resource type="Texture2D" uid="uid://pbd6b6jim3hk" path="res://Assets/Blender/Coffins/FirstTry/WoodPlank_normal.png" id="3_iykye"]
+
+[resource]
+cull_mode = 2
+albedo_texture = ExtResource("1_vkeot")
+roughness = 0.9
+normal_enabled = true
+normal_texture = ExtResource("3_iykye")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_hoej3")
+uv1_scale = Vector3(0.555, 0.555, 0.555)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 1.7411

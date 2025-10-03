@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dw02c7cav1cpx"]
+
+[ext_resource type="Script" uid="uid://dvxed1c2i8kmw" path="res://player.gd" id="1_xhfnw"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kpjcp"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_xhfnw"]
+
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("cam", "digRay", "digMarker")]
+script = ExtResource("1_xhfnw")
+cam = NodePath("Camera3D")
+digRay = NodePath("Camera3D/RayCast3D")
+digMarker = NodePath("Camera3D/Marker3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_kpjcp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_xhfnw")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.597568, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
+target_position = Vector3(0, 0, -3)
+collision_mask = 8388608
+
+[node name="Marker3D" type="Marker3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.202483, -1.16646)

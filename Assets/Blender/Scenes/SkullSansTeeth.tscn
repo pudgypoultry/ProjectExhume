@@ -1,0 +1,797 @@
+[gd_scene load_steps=21 format=4 uid="uid://6rjwq28uknwe"]
+
+[ext_resource type="PackedScene" uid="uid://wet4urhsw7oc" path="res://Assets/Blender/Scenes/Skull.tscn" id="1_pmi0g"]
+[ext_resource type="Script" uid="uid://c7eclndi1atq3" path="res://Assets/Blender/SkullTeeth.gd" id="2_pxfh7"]
+[ext_resource type="Material" uid="uid://b5cenwechr043" path="res://Assets/Materials/GoldMaterial.tres" id="3_tnqo6"]
+[ext_resource type="Script" uid="uid://dqy1ijx8kaan7" path="res://Assets/Blender/Collectable.gd" id="4_pxfh7"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7rf6u"]
+_surfaces = [{
+"aabb": AABB(-0.0034235, -0.00876479, -0.0045737, 0.00741407, 0.0140748, 0.00813849),
+"format": 34896613377,
+"index_count": 42,
+"index_data": PackedByteArray("BQAGAAQABgAFAAcAAwAHAAUABQAEAAMABgAHAAAAAwAAAAcABAAGAAgACAAGAAAAAQADAAQAAwABAAAAAgAEAAgABAACAAEACAAAAAIAAAABAAIA"),
+"lods": [0.00514979, PackedByteArray("AAABAAIAAwABAAAABAACAAEAAQADAAQABAAAAAIAAwAAAAUABAAFAAAABQAEAAMA")],
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("Xxf///bGAAAWMAPiAAAAAELfkfllYgAAAADcu6FJAAD//wM7g2cAAB9VAABIwgAANJV6tv//AACbGk5XvOIAAAnfb8bnwQAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tnqo6"]
+resource_name = "final-skeleton_Cube_239"
+_surfaces = [{
+"aabb": AABB(-0.0034235, -0.00876479, -0.0045737, 0.00741407, 0.0140748, 0.00813849),
+"attribute_data": PackedByteArray("vTMsA4I0xwKCNJQDCvpRhQX6koaT+cCGQ/nyhEP5boaT+cCGCvpRhUP5lo7d+TiO/PkVkFD594/j+ZjPIfr2z0P59s/A+TjO3fk4joD5iI+A+YiPBfrfjmT8BaRk/CmlG/wSpYD5iI8F+t+O/PkVkJH7IqVk/AWkG/wSpQr6UYVD+W6G4/mYz3P5w85D+fbPQ/mej4D5iI8="),
+"format": 34896613399,
+"index_count": 42,
+"index_data": PackedByteArray("EgATAAoAAAABAAIAFAALABUAAwAEAAUAFgAXABgAGQAaABsAHAAdAB4ADgAPABAABgAfAAcACAAgAAkAIQAiABEAIQAjACIAJAAMAA0AJAAlAAwA"),
+"lods": [0.00514979, PackedByteArray("AAABAAIAAwAEAAUABgADAAcACAAHAAkACgALAAwACgAMAA0ADgAPABAADgAQABEA")],
+"material": ExtResource("3_tnqo6"),
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 38,
+"vertex_data": PackedByteArray("Xxf///bGkNMWMAPiAACQ00LfkfllYpDT//8DO4Nna/xC35H5ZWJr/BYwA+IAAGv8H1UAAEjClPAAANy7oUmU8BYwA+IAAM3p//8DO4Nnzen//wM7g2er/x9VAABIwlr9Xxf///bGePRC35H5ZWLE8wAA3LuhSb/6FjAD4gAAv/pfF///9sa/+h9VAABIwlbzH1UAAEjCq/80lXq2//+r/zSVerb//1r9mxpOV7ziWv3//wM7g2ey7jSVerb//7LuCd9vxufBsu40lXq2///c/psaTle84tz+Xxf///bG3P5C35H5ZWLM6v//AzuDZ8zqCd9vxufBzOr//wM7g2eU8AAA3LuhSc3pAADcu6FJI/abGk5XvOIX9F8X///2xsn2Cd9vxufBg/Q0lXq2//9m9UPf2EFD39hBQ9/YQZsTb1SbE29UmxNvVF4ZsnZeGbJ2WCEQeFghEHiNDDXiq4FxdKGWIZzolu6bDO6OOwzujjsM7o47p0KwhY0MNeKNDDXiq4FxdKuBcXSln/5vpZ/+b6Wf/m9UbNGEVGzRhFRs0YTtthhx7bYYce22GHFeGbJ2WCEQeF9BvYJQQueEEUELgp2WJJxClmac")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_7rf6u")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0dso7"]
+radius = 0.02
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gb6xu"]
+_surfaces = [{
+"aabb": AABB(-0.00484324, -0.00538795, -0.00492018, 0.00928972, 0.0102108, 0.0100789),
+"format": 34896613377,
+"index_count": 66,
+"index_data": PackedByteArray("CQABAAIAAQAJAAoAAgAAAAkACgAJAAYAAAAGAAkAAAACAAQABgAAAAsABAALAAAADAAKAAYADAAGAAsAAQAKAAUABQAKAAwAAQADAAIABQADAAEAAwAEAAIABQAMAAgABQAIAAMADAALAAcABAAHAAsACAAMAAcAAwAHAAQAAwAIAAcA"),
+"lods": [0.00232012, PackedByteArray("AAABAAIAAQADAAIAAAACAAQAAwAEAAIAAQAAAAUABQADAAEABAAGAAAABQAAAAYAAwAHAAQABAAHAAYABQAIAAMAAwAIAAcACAAFAAYACAAGAAcA")],
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 13,
+"vertex_data": PackedByteArray("+h9xG3+pAACaYDhAAAAAAAAADLXEVwAAj0Bt95AiAAAKIAPTbtQAAEHVwlXKCgAAqswAADW1AAClpTjc//8AACnP//+DNQAABTF0N2BhAADz8tkgdkMAALit8T6g+gAA//9Jt9KDAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8lyyt"]
+resource_name = "final-skeleton_Cube_245"
+_surfaces = [{
+"aabb": AABB(-0.00484324, -0.00538795, -0.00492018, 0.00928972, 0.0102108, 0.0100789),
+"attribute_data": PackedByteArray("kfu+jHz8wYwD/IONfPy9jQP8g42e+7CNNfoUN0P55zdD+Tk3VvrBN8n53Da2+zqQkftJjzz8TpBn/FePR9CxB1zPwwcQz+oGR9DMBlzPwwdA0AwIQ88FCEfQsQdM/KOokfuBp1n8pqeg+7Wo8vvTjHz8wYwD/IONQ/nnN1b6wTeR+7GPkfvipwP8g43y+9OMtvs6kJH7sY94/PuPePz7j3j8+4+R+7GPZ/xXj/XPLgcgz2cHEM/qBjX6FDdD+Tk39c8uByDPZweR+76M9c8uB3XPsgb1+Rc4kfvip1n8pqc="),
+"format": 34896613399,
+"index_count": 66,
+"index_data": PackedByteArray("GwAcAB0AAQADAAIABgAeAAgABgAfAB4ADAAOACAAGAAZACEAIgAAACMAJAAlACYACwAnAA0AKAApACoAKwAsAC0ALgAvAAoAEAAwAA8AEAAxADAAMgAEAAUAMwA0ABIAMwARADQAEwAUABUAEwAWABQACQA1AAcAFwA2ADcAFwAaADYA"),
+"lods": [0.00232012, PackedByteArray("AAABAAIAAQADAAIAAAAEAAUABgAHAAgABgAJAAcABgAIAAoACwAMAA0ADQAMAA4ADwAQABEADwARABIAEwAUABUAEwAWABQAFwAYABkAFwAaABgA")],
+"material": ExtResource("3_tnqo6"),
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 56,
+"vertex_data": PackedByteArray("+h9xG3+p5PiaYDhAAAD2+gAADLXEV/b6j0Bt95Ai9voAAAy1xFet/wogA9Nu1K3/j0Bt95AiuMulpTjc//+wuQogA9Nu1LjLKc///4M1sLkAAAy1xFdE3ppgOEAAAHLi+h9xG3+pNdBB1cJVygpy4qrMAAA1tTXQKc///4M1wuRB1cJVygrC5KrMAAA1tQLMpaU43P//XtJB1cJVygrd/I9AbfeQIvb8mmA4QAAAuvwpz///gzUY/QogA9Nu1Fn/qswAADW1dvz6H3Ebf6l2/KWlONz//1r/BTF0N2Bh3/iaYDhAAADf+AAADLXEV9/4paU43P//uMspz///gzW4ywUxdDdgYTXQuK3xPqD6dvwAAAy1xFfk+AUxdDdgYeT4mmA4QAAAbcYFMXQ3YGFtxvPy2SB2Q23G8/LZIHZDcuLz8tkgdkOJzQUxdDdgYYnNqswAADW1ic3//0m30oPfzPPy2SB2Q9/MqswAADW138yPQG33kCJE3gogA9Nu1ETe//9Jt9KDwuTz8tkgdkPC5PofcRt/qa3///9Jt9KDIdC4rfE+oPp2zv//SbfSg7C5uK3xPqD6Wf/6H3Ebf6lZ/ws+knEZ9e6rGfXuqxn17qszSRx9M0kcfenfSzPPvu0j6d9LM8++7SNo98ZAUAATjjcQWJBQABOONxBYkPQs5C/0LOQvIx/cI5EaZyXSt5e+Lrcyv7y4ur1RtgHAy/hE6l114VpddeFay/hE6mg7QHFoO0BxaDtAcenfSzPp30szNxBYkF114VoLPpJxCz6ScRkRl5AZEZeQGRGXkFAAE45qE2ORahNjkWoTY5GHIvIshyLyLIci8ixo98ZAaPfGQPQs5C/0LOQvM0kcfSAc4CRSHXkkz77tI8v4ROrL+ETq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_gb6xu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ynmb"]
+resource_name = "Bone"
+cull_mode = 2
+albedo_color = Color(0.862929, 0.79291, 0.776643, 1)
+roughness = 0.653192
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_owuni"]
+_surfaces = [{
+"aabb": AABB(-0.00492023, -0.0050593, -0.00426811, 0.00911123, 0.0102157, 0.00815517),
+"format": 34896613377,
+"index_count": 66,
+"index_data": PackedByteArray("CQAHAAQABAABAAkACQABAAoABwAJAAoABAAHAAYABAACAAEAAgAEAAYAAAAKAAEAAAABAAIABwAKAAgACwAGAAcAAgAGAAsACwAHAAgAAAACAAwAAgALAAwAAAADAAoACAAKAAMAAAAMAAMABQALAAgABQAMAAsABQAIAAMABQADAAwA"),
+"lods": [0.00248717, PackedByteArray("AAABAAIAAAADAAEABAACAAEAAAAFAAMAAAACAAUAAgAEAAYAAgAGAAUABAABAAcABAAHAAYACAABAAMABQAIAAMABwABAAgABQAGAAgABgAHAAgA")],
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 13,
+"vertex_data": PackedByteArray("Y8WzsP//AAAJ29ndpfYAACTPAACW5wAAYze50QntAAD//25Hi3cAAAAAA3l0bAAAHNqyN6MBAAD52f//vE8AAOdFwu9uRwAAV/ER0ImXAABmlEbW+ZQAAOs5zVYAAAAAHiIjJKzOAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1ldvv"]
+resource_name = "final-skeleton_Cube_248"
+_surfaces = [{
+"aabb": AABB(-0.00492023, -0.0050593, -0.00426811, 0.00911123, 0.0102157, 0.00815517),
+"attribute_data": PackedByteArray("SfsaTib7UE5w+y5N1fplTXn6S055+jJNcPsuTesY5QLbGJQDzBjSAiUYlAMUGOUCefoKXXr7klzJ+pRdevusXXn6tVF7+7pRFPvLUnn6fVFw+wRR4PqBUXn6mlB2+7VR4PqBUcb6IE55+ktO1fplTdsYlAN0GC0DFBjlAnQYLQMlGJQDdBgtA24YvQJ0GC0Dbhi9AnQYLQM1gYkDdoEOA3aBlAO6+rlcyfqUXdX6ZU0m+1BOxvogTnD7Lk2R+opSe/t/UnD7BFHg+oFR+PqaULr6uVzV+mVNefoyTXv7f1KR+opS+PqaUA=="),
+"format": 34896613399,
+"index_count": 66,
+"index_data": PackedByteArray("GQAaABsAAAABAAIABwAcAB0AHgAfACAACgAhAAgAIgAJACMACwAkACUAJgAnACgADAApACoAKwAsAC0AKwAuACwAEgAvADAAMQAyADMABgADAAUANAAPAA4ANAANAA8ANQAEADYAEAA3ADgAEAARADcAEwA5ABUAEwAWADkAFAAXABgA"),
+"lods": [0.00248717, PackedByteArray("AAABAAIAAwACAAEAAwABAAQAAwAEAAUABgADAAUABwAIAAkACgAJAAgACwAJAAoADAANAA4ADQAPAA4AEAARABIAEwAUABUAEwAWABQAFAAXABgA")],
+"material": SubResource("StandardMaterial3D_1ynmb"),
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 58,
+"vertex_data": PackedByteArray("Y8WzsP//3fgJ29ndpfbd+CTPAACW5934//9uR4t3NvP52f//vE/09hzasjejATbzJM8AAJbnNvNjxbOw///k1WM3udEJ7erVCdvZ3aX2YNznRcLvbkfq1fnZ//+8T17MAAADeXRsdfEc2rI3owHG8udFwu9uR8by+dn//7xPxvIkzwAAlueF4BzasjejAYXgAAADeXRsgfdjxbOw///+9gAAA3l0bIHzYze50Qnt+PYkzwAAlucE9+dFwu9uR4HzYze50QntgfNX8RHQiZde9fnZ//+8T171//9uR4t3XvVjN7nRCe3k1WaURtb5lOTV+dn//7xPnctmlEbW+ZSdy+dFwu9uR53LZpRG1vmU6tVX8RHQiZdg3GaURtb5lGDcV/ER0ImXXsxmlEbW+ZRezGPFs7D//3DEZpRG1vmUcMQJ29ndpfZwxOs5zVYAAHXx50XC725HdfH//25Hi3c69wnb2d2l9jr3V/ER0ImXOvckzwAAluc69x4iIySszoH36znNVgAAgfcAAAN5dGxV/WM3udEJ7VX9HiIjJKzOVf3rOc1WAADG8v//bkeLd/T2HNqyN6MB9PbrOc1WAACF4B4iIySszoXgHiIjJKzO//aAmf15gJn9eYCZ/Xn7GrHLw8hTevsascv7GrHLgKfgoFunDKQdrL6rW6cMpKSdmp7Y+kWt1vykf9b8pH/W/KR/bk00V25NNFdYRwdnVfgl+IrwTjdU+Cb4Vvgl+IrwTjeK8E43e8UHe3vFB3t7xQd7gKfgoICn4KDgm5in4JuYp+CbmKdbpwykHay+qx2svquknZqepJ2aniju9c8o7vXPKO71z9j6Ra3Y+kWtBbHrdwWx63cFset3BbHrd1hHB2dYRwdnjP9nMoz/ZzKM/2cy1vykf8PIU3rDyFN6bk00V25NNFdV+CX4")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_owuni")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6d4ek"]
+_surfaces = [{
+"aabb": AABB(-0.00439854, -0.00562777, -0.00428258, 0.00769003, 0.0132109, 0.00818991),
+"format": 34896613377,
+"index_count": 54,
+"index_data": PackedByteArray("AAABAAIAAAACAAcAAAAHAAQABAABAAAACAAHAAIAAQAEAAYABwAJAAQACQAHAAgACQAGAAQACQAIAAUACgAGAAkAAQAGAAoACQAFAAoAAQADAAIACAACAAMAAwABAAoAAwAFAAgACgAFAAMA"),
+"lods": [0.00305572, PackedByteArray("AAABAAIAAQADAAIABAABAAAAAwABAAUAAQAEAAYAAQAGAAUABwAGAAQAAAAHAAQABQAGAAcAAAACAAcAAwAFAAcABwACAAMA")],
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 11,
+"vertex_data": PackedByteArray("TYcGt8Q3AAAwIKqgBn0AAJVgDEAAAAAAAACEG5+GAAD//764j0gAAMpfmB+u4AAAavH//2LFAAC34+0qryoAANmeAAC9jQAADfsGUiu9AABgfH2V//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0dso7"]
+resource_name = "final-skeleton_Cube_252"
+_surfaces = [{
+"aabb": AABB(-0.00439854, -0.00562777, -0.00428258, 0.00769003, 0.0132109, 0.00818991),
+"attribute_data": PackedByteArray("0BSUA1AUcwPQFLoCHRSRApp+lAOafqcCzH4jAyL7smR5+nhliPrkYw77yWMQ+gCpuvmaqkP5JqlD+Rqq+VGUA2pRfgNqUcQC3lGzAq5UywKuVJQDBlRaA5dMggMRTZoCEU2UA4FMqAJ5+rVkF/rNqdb5g6nW+YOpuvmaqkP5GqrW+YOpuvnXqHn6tWQO+8ljIvuyZHn6tWQGUgIDQ/kmqdb5g6lQFHMD0BS6AmpRxAIGUgID1vmDqRf6zam6+deo"),
+"format": 34896613399,
+"index_count": 54,
+"index_data": PackedByteArray("AAABAAIABAAFAAYABwAIABoAGwAMABwAHQAeAB8AIAANACEAIgAJAAoAIwAkACUAJgAQABEAJgAPABAAJwAoAA4AEwAUABUAKQADACoAKwASACwALQALAC4ALQAvAAsAFgAXABgAFgAZABcA"),
+"lods": [0.00305572, PackedByteArray("AAABAAIAAQADAAIABAAFAAYABwAIAAkACgAHAAkACwAMAA0ADQAMAA4ADwAQABEAEQASAA8AEwAUABUAFgAXABgAFgAZABcA")],
+"material": ExtResource("3_tnqo6"),
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("TYcGt8Q3f/IwIKqgBn1/8pVgDEAAAH/yAACEG5+GH/r//764j0h61zAgqqAGfXrXTYcGt8Q3etcwIKqgBn1q72rx//9ixWrvyl+YH67gzPoAAIQbn4bM+spfmB+u4IryavH//2LF/vW34+0qrypr8v//vriPSD7+t+PtKq8qDNiVYAxAAAAM2AAAhBufhgzYyl+YH67gSrMwIKqgBn0A9v//vriPSAD2avH//2LFAPZNhwa3xDfw+Lfj7SqvKvD4//++uI9I8PiVYAxAAADw+GB8fZX//2rvYHx9lf///vUN+wZSK73+9Q37BlIrvbf7avH//2LFt/v//764j0i3+w37BlIrvWvy2Z4AAL2Na/JgfH2V///M+gAAhBufhob4MCCqoAZ9hvhgfH2V//+G+NmeAAC9jQzYt+PtKq8qPv4N+wZSK70+/jAgqqAGfR/6lWAMQAAAH/oAAIQbn4ZKs9meAAC9jUqzDfsGUiu9tPJgfH2V//8H89meAAC9jSDyJv0iWyb9Ilsm/SJbEf1Xr4baZR+G2mUfhtplH83rzyTN688km/yM25v8jNvFDTDpuwKyGWIUE8+mvox3HR4tph0eLaYdHi2mByUHuQfLNi0HyzYtB8s2LYTrUnmE61J5hOtSeYTrUnnN688kuwKyGbsCshk4vH19OLx9fTi8fX1iFBPPYhQTz5v8jNsg/YYrIP2GKyD9hisdHi2mpr6Md6a+jHcR/VevEf1XrwclB7kHJQe50A066eUNTemqDRfp")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_6d4ek")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_g0vsw"]
+_surfaces = [{
+"aabb": AABB(-0.00434331, -0.0067589, -0.00569673, 0.00873706, 0.0123773, 0.0119257),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("CAAJAAUACAAGAAkACQAHAAUACQAGAAIACQACAAcAAgAGAAoACgAGAAgACwAHAAIACwACAAwACgAMAAIADQAHAAsADAANAAsABQAHAAQADQAEAAcADAABAA0AAQAEAA0ACgABAAwABQAEAAMAAQADAAQACAAFAAMACAAOAAoACAADAA4ADgADAAAACgAOAAAAAQAAAAMACgAAAA8AAQAPAAAAAQAKAA8A"),
+"lods": [0.00245464, PackedByteArray("AAABAAIAAQAAAAMAAQADAAQAAgABAAQABQADAAAABQAEAAMAAgAGAAAAAAAGAAUABQAGAAIAAgAEAAcABQAHAAQABQACAAcA")],
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("jkMAAKTJAACa8WAYtKQAAJW2vi0AAAAA5HgU4f//AADs11DjHuoAANkw//8oOgAAzBnAF15LAACqtEn8khAAAAAACb53cQAAmRiAYAgiAAAfJzUgnoIAAN/pnM4jNwAAys1OPnBdAAD//82yJ6MAAEQYBZhnzQAA2oTpEhSaAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jknm2"]
+resource_name = "final-skeleton_Cube_006"
+_surfaces = [{
+"aabb": AABB(-0.00434331, -0.0067589, -0.00569673, 0.00873706, 0.0123773, 0.0119257),
+"attribute_data": PackedByteArray("Zfxkd5H7bneR+3x4X/wzeJGhnQbDoKIGZ6AMCKihDAg3+32uR/sGrXn6La2T+n2uQrjzB/S2vQb0tgwIQbjnBpH72EQD/JhDkfuTQzT870RT+03T4fq61FP7qtR++krTy6C5B26gCgdnoAwIYfzfd5P77XeR+253Yfzfdwb8nXdh/N93k/vtd5H7fHhh/N93Yfzfd2X8ZHcG/J13efo71OH6utR++krTF6G+BsOgogbLoLkHF6G+BmahlQfLoLkHZqGVBxehvgaR+253Bvyddzr7da15+i2tL7e0B0K48wcVuGYHy6C5B2ahlQcVuGYHR7cIBy+3tAdBuOcGR7cIB/S2DAgvt7QHL7e0B/S2vQZHtwgHOvt1rQ=="),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("GAAZABoAGAAFABkAGwABABwAHQAeAB8AIAAhACIAAgADACMAJAAlACYAJwAoACkAKgArACwALQAuAAQALwAwADEAMgAzAAAANAAJADUANgA3ADgAOQAHADoAOQAGAAcAOwA8AD0AOwA+ADwAPwBAAEEAPwANAEAAQgAOAAwADwBDAEQAEAARABIAEAATABEARQALAAgARQAKAAsAFAAVABYAFAAXABUA"),
+"lods": [0.00245464, PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACAAKAAsADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA")],
+"material": ExtResource("3_tnqo6"),
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 70,
+"vertex_data": PackedByteArray("jkMAAKTJJwOa8WAYtKStA5W2vi0AAGcBzBnAF15LZwGOQwAApMm/R8wZwBdeSxs02TD//yg6UkjkeBTh///gSNkw//8oOtgMzBnAF15LjxOVtr4tAADYDKq0SfySENgMlba+LQAAkBrs11DjHurKO6q0SfySEJAamvFgGLSkUzfZMP//KDqzROzXUOMe6rNE5HgU4f//s0SqtEn8khCzRJrxYBi0pO9t5HgU4f//723s11DjHurvbY5DAACkye9tAAAJvndxATSZGIBgCCITNNkw//8oOvkzHyc1IJ6CrQPKzU4+cF2tA5rxYBi0pGIAHyc1IJ6CYgDahOkSFJpiAB8nNSCegjUCys1OPnBdNQKVtr4tAAA1Ah8nNSCegmcBHyc1IJ6CDQeOQwAApMkNB9qE6RIUmg0HRBgFmGfNZGrkeBTh//9kao5DAACkyWRqHyc1IJ6C+UfMGcAXXkv5RwAACb53cflHHyc1IJ6Cv0dEGAWYZ82/RwAACb53cfJERBgFmGfN8kQfJzUgnoLyRJrxYBi0pCcD2oTpEhSaJwOZGIBgCCKPE5W2vi0AAI8T3+mcziM3JSWVtr4tAAAlJcrNTj5wXSUlAAAJvndxnUhEGAWYZ81KScrNTj5wXQoj///Nsiej9yLf6ZzOIzfnIprxYBi0pBwj///Nsiej2TuqtEn8khAHPN/pnM4jNz883+mcziM3kBrs11DjHupTN///zbIno1M3mRiAYAgi2Aw9Qjz0BEmG8zKNf0oyjX9KKWou6mZ33uzvmBfHaJovx9mD0vUyZJ372YPS9dmD0vXeslFH9rvlUt6yUUdyoMJWqu+7Y6rvu2Oq77tjqu+7Y3E0FjRxNBY0cjQWNHE0FjQ3dt7qDHdG7Oh1WOoESYbzBEmG8w1PXusNT17rDU9e64mNN0uJjTdLiY03SzKNf0rvSH/370h/9+9If/e8ZjnevGY53rxmOd5fbbrqX2266l9tuuopai7qKWou6uls8OrpbPDq6Wzw6j1CPPQ9Qjz0MmSd+zJknftYpl5OWKZeTlimXk6xmSPHj5tCx76oeEzQqJRM4KitTK2oXUzqu7JSxbsUUpa7UFHeslFHcqDCVnKgwlbZg9L1")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_g0vsw")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7j7t7"]
+_surfaces = [{
+"aabb": AABB(-0.00444951, -0.00553406, -0.00515141, 0.00917522, 0.0105781, 0.0107518),
+"format": 34896613377,
+"index_count": 66,
+"index_data": PackedByteArray("AAABAAIAAAACAAgACAACAAkACQACAAEAAAAEAAEACQABAAUABwABAAQABwAFAAEACQAFAAoABwAKAAUACAAJAAMAAwAJAAoAAAAIAAYAAwAGAAgAAAALAAQACwAHAAQABgALAAAABwAMAAoACgAMAAMADAAHAAsAAwAMAAYABgAMAAsA"),
+"lods": [0.00215706, PackedByteArray("AAABAAIAAAACAAMAAwACAAEAAAAEAAEAAwABAAUAAAADAAYABQAGAAMABgAEAAAABwAFAAEABwAGAAUABwABAAQABgAHAAQA")],
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 13,
+"vertex_data": PackedByteArray("oN7GDpO4AACPMw01GgYAALRpAAAf0gAASDPy6EbdAADSym5LAAAAADspM/ECIQAA18b6p6f7AAAen7j3xyIAAKJPv5X//wAAAAA2XoFgAADnCP//YWkAAP//SHT7TwAAPth91lCkAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_w40hw"]
+resource_name = "final-skeleton_Cube_011"
+_surfaces = [{
+"aabb": AABB(-0.00444951, -0.00553406, -0.00515141, 0.00917522, 0.0105781, 0.0107518),
+"attribute_data": PackedByteArray("k/vYOkr87Dsk/L06kfvsO0X7Gccc+9bFwPpDx3n6RMa94RYHgeDwB4nhDAh+4MMGjPqtsX764LJ2+8eydvvBsWoLhwMWDI0CXAuNAvgLlAMECksCcgmUAwgKNgNyCVkCefpExlH7UMYICjYDdgk1A1H7UMZ5+vPGRfsZx3n688Z5+vPGUftQxr3hFgfX4KIHteHEByX7gbIl+4GydvvHsnn6OLJ++uCyJfuBsiX7gbJ2+8Gxefo4stfgoge14cQHgeDwB1jhwwbX4KIHfuDDBtfgogd2CTUD"),
+"format": 34896613399,
+"index_count": 66,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAGAAZAAUAFQAaABsABAAcAB0AHgAfAAYAIAAhAAcAIgAjACQAJQANAA4ADwAmACcAKAApACoADAArACwADAAtACsALgAKAC8ALgAwAAoAMQAyAAgAMQAzADIAEAARABIAEAATABEANAALAAkAFAA1ABYAFAAXADUA"),
+"lods": [0.00215706, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABgAFAAcACAAJAAoACAALAAkADAANAA4ADAAOAA8AEAARABIAEAATABEAFAAVABYAFAAXABUA")],
+"material": ExtResource("3_tnqo6"),
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 54,
+"vertex_data": PackedByteArray("oN7GDpO4YQGPMw01GgZhAbRpAAAf0mEB0spuSwAAYQEen7j3xyI1R9fG+qen+31UOykz8QIh7TVIM/LoRt0/RUgz8uhG3Us3jzMNNRoGvSE7KTPxAiErJbRpAAAf0r0h18b6p6f7lToen7j3xyKTI9LKbksAAJMjoN7GDpO4GCMen7j3xyIMAY8zDTUaBgwB0spuSwAADAE7KTPxAiEMAaDexg6TuKhuSDPy6EbdVG7Xxvqnp/upbrRpAAAf0qhuSDPy6EbdfVQ+2H3WUKR9VNfG+qen+1Ruok+/lf//VG4+2H3WUKQ1R+cI//9haTVHHp+498ci7TXnCP//YWntNecI//9haT9FPth91lCkP0VIM/LoRt0aOAAANl6BYBo45wj//2FpGjj//0h0+0+TI///SHT7Txgj0spuSwAAGCM+2H3WUKQfMh6fuPfHIh8y//9IdPtPHzL//0h0+0+VOqDexg6TuJU6Pth91lCklToAADZegWCWJecI//9hadokjzMNNRoG0yWiT7+V//8TNwAANl6BYPc2tGkAAB/SyTYAADZegWC9IaJPv5X//6huLoYeOi6GHjouhh46LoYeOjbo3l5J3TJbT/NcZDTnFV9p0jHmQL8x9VbHntNAvzH1QaTyT522p0adtqdGGJWbPRh3ue0Yd7ntGHe57Rh3ue05HntAf/4OVzkee0A5HntASd0yW0ndMlt//g5Xf/4OVzbo3l426N5eT/NcZE/zXGQ05xVfNOcVX0/UnNtP1JzbT9Sc2522p0YYlZs9GJWbPSC7pVMgu6VTILulU0Gk8k9BpPJPQaTyT1rGM9QRyC/Tx8WK1J3SFua30gjm4dLy5UC/MfU5HntA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_7j7t7")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fhhv2"]
+_surfaces = [{
+"aabb": AABB(-0.0032915, -0.00562777, -0.00428258, 0.00769003, 0.0132109, 0.00818991),
+"format": 34896613377,
+"index_count": 54,
+"index_data": PackedByteArray("AAABAAIAAAAFAAEAAAAEAAUABAAAAAIACAABAAUAAgAGAAQABQAEAAkACQAIAAUACQAEAAYACQAHAAgACAADAAEAAgABAAMAAwAIAAcAAgAKAAYAAwAKAAIACgAJAAYACgADAAcACQAKAAcA"),
+"lods": [0.00314368, PackedByteArray("AAABAAIAAgABAAMABAAAAAIAAAAFAAEAAAAEAAUABQADAAEAAgAGAAQABQAEAAYAAwAHAAIAAwAFAAcAAgAHAAYABgAHAAUA")],
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 11,
+"vertex_data": PackedByteArray("sXgGt8Q3AABpnwxAAAAAAM7fqqAGfQAA//+EG5+GAAAAAL64j0gAAEcc7SqvKgAAlA7//2LFAAA0oJgfruAAACVhAAC9jQAA8QQGUiu9AACeg32V//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_00ltb"]
+resource_name = "final-skeleton_Cube_013"
+_surfaces = [{
+"aabb": AABB(-0.0032915, -0.00562777, -0.00428258, 0.00769003, 0.0132109, 0.00818991),
+"attribute_data": PackedByteArray("0BSUA9AUugJQFHMDHRSRApp+lAPMfiMDmn6nAiL7smSI+uRjefp4ZQ77yWP5UZQDalHEAmpRfgPeUbMCQ/kmqUP5Gqq6+ZqqEPoAqa5UywIGVFoDrlSUA5dMggMRTZoCgUyoAhFNlAN5+rVkF/rNqdb5g6nW+YOpQ/kaqrr5mqrW+YOpuvnXqHn6tWQO+8ljefq1ZCL7smQGUgIDQ/kmqdb5g6lQFHMD0BS6AmpRxAIGUgID1vmDqbr516gX+s2p"),
+"format": 34896613399,
+"index_count": 54,
+"index_data": PackedByteArray("AAABAAIABAAFAAYABwAaAAkAGwAcABEAHQAeAB8AIAAhAA8AIgAKAAgAIwAkACUAJgANAAsAJgAMAA0AJwAQACgAEwAUABUAKQAqAAMAKwAsAA4ALQASAC4ALQAvABIAFgAXABgAFgAZABcA"),
+"lods": [0.00314368, PackedByteArray("AAABAAIAAgABAAMABAAFAAYABwAIAAkACgAIAAcACwAMAA0ADAALAA4ADwAQABEAEQASAA8AEwAUABUAFgAXABgAFgAZABcA")],
+"material": ExtResource("3_tnqo6"),
+"name": "Bone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("sXgGt8Q3rhxpnwxAAACuHM7fqqAGfa4c//+EG5+G4SgAAL64j0ikPLF4BrfEN6Q8zt+qoAZ9pDzO36qgBn23UTSgmB+u4IlflA7//2LFt1H//4Qbn4aJX0cc7SqvKhoG//+EG5+GGgZpnwxAAAAaBjSgmB+u4KsLRxztKq8q6EIAAL64j0izO5QO//9ixQ9pNKCYH67gWWXO36qgBn20IJQO//9ixbQgAAC+uI9ItCCxeAa3xDdXCkcc7SqvKlcKaZ8MQAAAVwoAAL64j0hXCp6DfZX//7dRnoN9lf//D2nxBAZSK70PafEEBlIrvR1DAAC+uI9IHUOUDv//YsUdQ/EEBlIrvehCJWEAAL2N6EKeg32V//+JX///hBufhlxXnoN9lf//XFfO36qgBn1cVyVhAAC9jRoGRxztKq8qszvxBAZSK72zO87fqqAGfeEoaZ8MQAAA4Sj//4Qbn4arCyVhAAC9jasL8QQGUiu9b2UlYQAAvY0gZZ6DfZX//5tlMZZOAzGWTgMxlk4DaXImBKDbZyug22croNtnK1jA6yKPZXAJWMDrIo9lcAlcQ2npXENp6VxDaekMKZPqzUto4Ctx9u0BsH/3qTdi3ivKDT8ryg0/K8oNPxV5Ue8VeVHvFXlR7xV5Ue9YwOsiAbB/9wGwf/c8e13yPHtd8jx7XfLNS2jgzUto4I9lcAmEmrAGhJqwBoSasAZcQ2npK3H27Stx9u1pciYEaXImBAwpk+oMKZPqxjco3mE39N4AOLPd")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_fhhv2")
+
+[node name="SkullWithGoldTeeth" node_paths=PackedStringArray("toothArray", "goldToothArray") instance=ExtResource("1_pmi0g")]
+script = ExtResource("2_pxfh7")
+toothArray = [NodePath("lateral-incisor_L"), NodePath("first-molar_L"), NodePath("retopo-tooth-lower_022_L"), NodePath("retopo-tooth-lower_020_R"), NodePath("retopo-tooth-lower_022_R"), NodePath("second-premolar_R")]
+goldToothArray = [NodePath("GoldTooth0"), NodePath("GoldTooth1"), NodePath("GoldTooth2"), NodePath("GoldTooth3"), NodePath("GoldTooth4"), NodePath("GoldTooth5")]
+
+[node name="cranium" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.357572, -0.0187629)
+
+[node name="mandible" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24548, 0.0316509)
+
+[node name="lateral-incisor_L" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0120726, 0.253905, 0.0840603)
+
+[node name="GoldTooth0" type="MeshInstance3D" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0120726, 0.253905, 0.0840603)
+visible = false
+mesh = SubResource("ArrayMesh_tnqo6")
+skeleton = NodePath("")
+
+[node name="Area3D" type="Area3D" parent="GoldTooth0" index="0"]
+script = ExtResource("4_pxfh7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GoldTooth0/Area3D" index="0"]
+shape = SubResource("SphereShape3D_0dso7")
+
+[node name="central-incisor_L" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00469883, 0.253226, 0.0879392)
+
+[node name="cuspid_L" parent="." index="5"]
+transform = Transform3D(0.999139, -0.0413628, -0.0031827, 0.0410369, 0.996679, -0.0703285, 0.00608111, 0.0701374, 0.997519, 0.0194364, 0.253816, 0.0802647)
+
+[node name="first-premolar_L" parent="." index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0229656, 0.2556, 0.0727048)
+
+[node name="second-premolar_L" parent="." index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0255373, 0.256509, 0.0643786)
+
+[node name="first-molar_L" parent="." index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0283779, 0.258149, 0.0555711)
+
+[node name="GoldTooth1" type="MeshInstance3D" parent="." index="9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0283779, 0.258149, 0.0555711)
+visible = false
+mesh = SubResource("ArrayMesh_8lyyt")
+skeleton = NodePath("")
+
+[node name="Area3D" type="Area3D" parent="GoldTooth1" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GoldTooth1/Area3D" index="0"]
+shape = SubResource("SphereShape3D_0dso7")
+
+[node name="second-molar_L" parent="." index="10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0289912, 0.260173, 0.0471153)
+mesh = SubResource("ArrayMesh_1ldvv")
+
+[node name="third-molar_L" parent="." index="11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0305268, 0.26153, 0.0398382)
+
+[node name="retopo-tooth-lower_018_L" parent="." index="12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0319528, 0.25286, 0.0408201)
+
+[node name="retopo-tooth-lower_019_L" parent="." index="13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0305015, 0.251443, 0.0488369)
+
+[node name="retopo-tooth-lower_020_L" parent="." index="14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0282954, 0.248383, 0.0570261)
+
+[node name="retopo-tooth-lower_021_L" parent="." index="15"]
+transform = Transform3D(0.98822, 0, -0.153037, 0, 1, 0, 0.153037, 0, 0.98822, 0.02524, 0.245695, 0.0669615)
+
+[node name="retopo-tooth-lower_022_L" parent="." index="16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0209963, 0.243777, 0.0745712)
+
+[node name="GoldTooth2" type="MeshInstance3D" parent="." index="17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0209963, 0.243777, 0.0745712)
+visible = false
+mesh = SubResource("ArrayMesh_0dso7")
+skeleton = NodePath("")
+
+[node name="Area3D" type="Area3D" parent="GoldTooth2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GoldTooth2/Area3D" index="0"]
+shape = SubResource("SphereShape3D_0dso7")
+
+[node name="retopo-tooth-lower_023_L" parent="." index="18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0149201, 0.242994, 0.0793047)
+
+[node name="retopo-tooth-lower_025_L" parent="." index="19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00974305, 0.242603, 0.0834776)
+
+[node name="retopo-tooth-lower_026_L" parent="." index="20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00343047, 0.242157, 0.0852197)
+
+[node name="third-molar_R" parent="." index="21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0305268, 0.26153, 0.0398382)
+
+[node name="lateral-incisor_R" parent="." index="22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0120726, 0.253905, 0.0840603)
+
+[node name="central-incisor_R" parent="." index="23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0046988, 0.253226, 0.0879392)
+
+[node name="cuspid_R" parent="." index="24"]
+transform = Transform3D(0.999139, -0.0413628, -0.0031827, 0.0410369, 0.996679, -0.0703285, 0.00608111, 0.0701374, 0.997519, -0.0194363, 0.253816, 0.0802647)
+
+[node name="first-premolar_R" parent="." index="25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0229656, 0.2556, 0.0727048)
+
+[node name="second-premolar_R" parent="." index="26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0255373, 0.256509, 0.0643786)
+
+[node name="GoldTooth5" type="MeshInstance3D" parent="." index="27"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0255373, 0.256509, 0.0643786)
+visible = false
+mesh = SubResource("ArrayMesh_jknm2")
+skeleton = NodePath("")
+
+[node name="Area3D" type="Area3D" parent="GoldTooth5" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GoldTooth5/Area3D" index="0"]
+shape = SubResource("SphereShape3D_0dso7")
+
+[node name="first-molar_R" parent="." index="28"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0283779, 0.258149, 0.0555711)
+
+[node name="second-molar_R" parent="." index="29"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0289911, 0.260173, 0.0471153)
+
+[node name="retopo-tooth-lower_018_R" parent="." index="30"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0319527, 0.25286, 0.0408201)
+
+[node name="retopo-tooth-lower_019_R" parent="." index="31"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0305015, 0.251443, 0.0488369)
+
+[node name="retopo-tooth-lower_020_R" parent="." index="32"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0282954, 0.248383, 0.0570261)
+
+[node name="GoldTooth3" type="MeshInstance3D" parent="." index="33"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0282954, 0.248383, 0.0570261)
+visible = false
+mesh = SubResource("ArrayMesh_w40hw")
+skeleton = NodePath("")
+
+[node name="Area3D" type="Area3D" parent="GoldTooth3" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GoldTooth3/Area3D" index="0"]
+shape = SubResource("SphereShape3D_0dso7")
+
+[node name="retopo-tooth-lower_021_R" parent="." index="34"]
+transform = Transform3D(0.98822, 0, -0.153037, 0, 1, 0, 0.153037, 0, 0.98822, -0.02524, 0.245695, 0.0669615)
+
+[node name="retopo-tooth-lower_022_R" parent="." index="35"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0209963, 0.243777, 0.0745712)
+
+[node name="GoldTooth4" type="MeshInstance3D" parent="." index="36"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0209963, 0.243777, 0.0745712)
+visible = false
+mesh = SubResource("ArrayMesh_00ltb")
+skeleton = NodePath("")
+
+[node name="Area3D" type="Area3D" parent="GoldTooth4" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GoldTooth4/Area3D" index="0"]
+shape = SubResource("SphereShape3D_0dso7")
+
+[node name="retopo-tooth-lower_023_R" parent="." index="37"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0149201, 0.242994, 0.0793047)
+
+[node name="retopo-tooth-lower_025_R" parent="." index="38"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00974301, 0.242603, 0.0834776)
+
+[node name="retopo-tooth-lower_026_R" parent="." index="39"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00343044, 0.242157, 0.0852197)
+
+[node name="spine-c1" parent="." index="40"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.270681, -0.03771)
+
+[node name="spine-c2" parent="." index="41"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.250956, -0.0368659)
+
+[node name="spine-c3" parent="." index="42"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.228146, -0.0361396)
+
+[node name="spine-c4" parent="." index="43"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.208146, -0.0409137)
+
+[node name="spine-c5" parent="." index="44"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.188398, -0.046821)
+
+[node name="spine-c6" parent="." index="45"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.169633, -0.0557602)
+
+[node name="spine-c7" parent="." index="46"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.149989, -0.0681833)
+
+[node name="spine-t4" parent="." index="47"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0544997, -0.102619)
+
+[node name="spine-t3" parent="." index="48"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0803873, -0.0961354)
+
+[node name="spine-t2" parent="." index="49"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.104507, -0.0891568)
+
+[node name="spine-t1" parent="." index="50"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.127406, -0.0798223)
+
+[node name="spine-t5" parent="." index="51"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0273594, -0.10463)
+
+[node name="spine-t6" parent="." index="52"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.000613242, -0.104599)
+
+[node name="spine-t7" parent="." index="53"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0267344, -0.104529)
+
+[node name="spine-t8" parent="." index="54"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0541904, -0.101604)
+
+[node name="spine-t9" parent="." index="55"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0839148, -0.0966848)
+
+[node name="spine-t10" parent="." index="56"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.11312, -0.0895086)
+
+[node name="spine-t11" parent="." index="57"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.143728, -0.0788912)
+
+[node name="spine-t12" parent="." index="58"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.175823, -0.0679228)
+
+[node name="spine-l1" parent="." index="59"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.21185, -0.0575784)
+
+[node name="spine-l2" parent="." index="60"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2494, -0.0475666)
+
+[node name="spine-l3" parent="." index="61"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.287027, -0.0417793)
+
+[node name="spine-l4" parent="." index="62"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.326856, -0.0454716)
+
+[node name="spine-l5" parent="." index="63"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.363244, -0.0567679)
+
+[node name="ribs" parent="." index="64"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0624213, -0.011091)
+
+[node name="clavicle_L" parent="." index="65"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.106782, 0.111697, -0.027681)
+
+[node name="clavicle_R" parent="." index="66"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.106782, 0.111697, -0.0276809)
+
+[node name="scapula_L" parent="." index="67"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.124104, 0.0547078, -0.117415)
+
+[node name="scapula_R" parent="." index="68"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.124104, 0.0547078, -0.117415)
+
+[node name="pelvis" parent="." index="69"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.425886, -0.0584167)
+
+[node name="humerus_L" parent="." index="70"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.258456, -0.0678656, -0.0928596)
+
+[node name="humerus_R" parent="." index="71"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.258456, -0.0678656, -0.0928596)
+
+[node name="ulna_L" parent="." index="72"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.358955, -0.321758, -0.105391)
+
+[node name="ulna_R" parent="." index="73"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358955, -0.321758, -0.105391)
+
+[node name="radius_L" parent="." index="74"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.411861, -0.354336, -0.093903)
+
+[node name="radius_R" parent="." index="75"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.411861, -0.354336, -0.093903)
+
+[node name="carpals_L" parent="." index="76"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.450867, -0.488229, -0.0916813)
+
+[node name="metacarpals_010_L" parent="." index="77"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.500537, -0.529565, -0.0898856)
+
+[node name="metacarpals_011_L" parent="." index="78"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.483577, -0.539291, -0.0894845)
+
+[node name="metacarpals_012_L" parent="." index="79"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.464441, -0.544829, -0.0890891)
+
+[node name="metacarpals_013_L" parent="." index="80"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.446579, -0.54714, -0.089416)
+
+[node name="metacarpals_014_L" parent="." index="81"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.506932, -0.49249, -0.0735749)
+
+[node name="c-proximal-phalanx_010_L" parent="." index="82"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.540278, -0.519111, -0.0588772)
+
+[node name="c-proximal-phalanx_011_L" parent="." index="83"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.541133, -0.583141, -0.0788706)
+
+[node name="c-proximal-phalanx_012_L" parent="." index="84"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.513193, -0.59625, -0.0782707)
+
+[node name="c-proximal-phalanx_013_L" parent="." index="85"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.484934, -0.60009, -0.0788383)
+
+[node name="c-proximal-phalanx_014_L" parent="." index="86"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.456755, -0.597423, -0.0802619)
+
+[node name="c-intermediate-phalanx_008_L" parent="." index="87"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5649, -0.610343, -0.0610051)
+
+[node name="c-intermediate-phalanx_009_L" parent="." index="88"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.532542, -0.632119, -0.0591678)
+
+[node name="c-intermediate-phalanx_010_L" parent="." index="89"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.499887, -0.635873, -0.0597996)
+
+[node name="c-intermediate-phalanx_011_L" parent="." index="90"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.463276, -0.630365, -0.0638555)
+
+[node name="c-distal-phalanx_010_L" parent="." index="91"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.559837, -0.541552, -0.0463663)
+
+[node name="c-distal-phalanx_011_L" parent="." index="92"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.577021, -0.625416, -0.0420713)
+
+[node name="c-distal-phalanx_012_L" parent="." index="93"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.543509, -0.650746, -0.0371965)
+
+[node name="c-distal-phalanx_013_L" parent="." index="94"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.508214, -0.65378, -0.0382489)
+
+[node name="c-distal-phalanx_014_L" parent="." index="95"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.466878, -0.648839, -0.0459469)
+
+[node name="carpals_R" parent="." index="96"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.450867, -0.488229, -0.0916813)
+
+[node name="metacarpals_005_R" parent="." index="97"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.500537, -0.529565, -0.0898856)
+
+[node name="metacarpals_006_R" parent="." index="98"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.483577, -0.539291, -0.0894845)
+
+[node name="metacarpals_007_R" parent="." index="99"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.464441, -0.544829, -0.0890891)
+
+[node name="metacarpals_008_R" parent="." index="100"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.446579, -0.54714, -0.089416)
+
+[node name="metacarpals_009_R" parent="." index="101"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.506932, -0.49249, -0.0735749)
+
+[node name="c-proximal-phalanx_005_R" parent="." index="102"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.540278, -0.519111, -0.0588772)
+
+[node name="c-proximal-phalanx_006_R" parent="." index="103"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.541133, -0.583141, -0.0788706)
+
+[node name="c-proximal-phalanx_007_R" parent="." index="104"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.513193, -0.59625, -0.0782707)
+
+[node name="c-proximal-phalanx_008_R" parent="." index="105"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.484934, -0.60009, -0.0788383)
+
+[node name="c-proximal-phalanx_009_R" parent="." index="106"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.456755, -0.597423, -0.0802619)
+
+[node name="c-intermediate-phalanx_004_R" parent="." index="107"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5649, -0.610343, -0.0610051)
+
+[node name="c-intermediate-phalanx_005_R" parent="." index="108"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.532542, -0.632119, -0.0591678)
+
+[node name="c-intermediate-phalanx_006_R" parent="." index="109"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.499887, -0.635873, -0.0597996)
+
+[node name="c-intermediate-phalanx_007_R" parent="." index="110"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.463276, -0.630365, -0.0638555)
+
+[node name="c-distal-phalanx_005_R" parent="." index="111"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.559837, -0.541552, -0.0463663)
+
+[node name="c-distal-phalanx_006_R" parent="." index="112"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.577021, -0.625416, -0.0420713)
+
+[node name="c-distal-phalanx_007_R" parent="." index="113"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.543509, -0.650746, -0.0371965)
+
+[node name="c-distal-phalanx_008_R" parent="." index="114"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.508214, -0.65378, -0.0382489)
+
+[node name="c-distal-phalanx_009_R" parent="." index="115"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.466878, -0.648839, -0.0459469)
+
+[node name="femur_L" parent="." index="116"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.107621, -0.717653, -0.0261461)
+
+[node name="femur_R" parent="." index="117"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107621, -0.717653, -0.0261461)
+
+[node name="patella_L" parent="." index="118"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0917496, -0.934592, 0.0108206)
+
+[node name="patella_R" parent="." index="119"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0917496, -0.934592, 0.0108206)
+
+[node name="tibia_L" parent="." index="120"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0914534, -1.0991, -0.0311492)
+
+[node name="tibia_R" parent="." index="121"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0914533, -1.0991, -0.0311492)
+
+[node name="fibula_L" parent="." index="122"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125379, -1.1433, -0.0537059)
+
+[node name="fibula_R" parent="." index="123"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125379, -1.1433, -0.0537059)
+
+[node name="tarsus_L" parent="." index="124"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0930902, -1.35948, -0.0363397)
+
+[node name="metatarsal-01_010_L" parent="." index="125"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0835683, -1.37861, 0.0664281)
+
+[node name="metatarsal-01_011_L" parent="." index="126"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.106863, -1.37271, 0.0611356)
+
+[node name="metatarsal-01_012_L" parent="." index="127"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.121774, -1.3745, 0.0550847)
+
+[node name="metatarsal-01_013_L" parent="." index="128"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.132912, -1.38198, 0.046977)
+
+[node name="metatarsal-01_014_L" parent="." index="129"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.142067, -1.38801, 0.0266386)
+
+[node name="t-proximal-phalanx_010_L" parent="." index="130"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0873494, -1.39958, 0.116726)
+
+[node name="t-proximal-phalanx_011_L" parent="." index="131"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.114143, -1.3961, 0.116057)
+
+[node name="t-proximal-phalanx_012_L" parent="." index="132"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.131253, -1.39526, 0.10974)
+
+[node name="t-proximal-phalanx_013_L" parent="." index="133"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.146983, -1.39606, 0.0976319)
+
+[node name="t-proximal-phalanx_014_L" parent="." index="134"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.162038, -1.40074, 0.0827047)
+
+[node name="t-intermediate-phalanx_008_L" parent="." index="135"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11947, -1.40205, 0.141768)
+
+[node name="t-intermediate-phalanx_009_L" parent="." index="136"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13713, -1.40069, 0.134298)
+
+[node name="t-intermediate-phalanx_010_L" parent="." index="137"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.153969, -1.40119, 0.119968)
+
+[node name="t-intermediate-phalanx_011" parent="." index="138"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.40289, 0.101817)
+
+[node name="t-distal-phalanx_010_L" parent="." index="139"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.169808, -1.40468, 0.110436)
+
+[node name="t-distal-phalanx_011_L" parent="." index="140"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.157246, -1.40501, 0.132328)
+
+[node name="t-distal-phalanx_012_L" parent="." index="141"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14067, -1.40489, 0.149002)
+
+[node name="t-distal-phalanx_013_L" parent="." index="142"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.123035, -1.40616, 0.156875)
+
+[node name="t-distal-phalanx_014_L" parent="." index="143"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0957585, -1.4051, 0.14571)
+
+[node name="t-distal-phalanx_005_R" parent="." index="144"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.169808, -1.40468, 0.110436)
+
+[node name="tarsus_R" parent="." index="145"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0930901, -1.35948, -0.0363397)
+
+[node name="metatarsal-01_005_R" parent="." index="146"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0835683, -1.37861, 0.0664281)
+
+[node name="metatarsal-01_006_R" parent="." index="147"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.106863, -1.37271, 0.0611356)
+
+[node name="metatarsal-01_007_R" parent="." index="148"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.121774, -1.3745, 0.0550847)
+
+[node name="metatarsal-01_008_R" parent="." index="149"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.132912, -1.38198, 0.046977)
+
+[node name="metatarsal-01_009_R" parent="." index="150"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.142067, -1.38801, 0.0266386)
+
+[node name="t-proximal-phalanx_005_R" parent="." index="151"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0873494, -1.39958, 0.116726)
+
+[node name="t-proximal-phalanx_006_R" parent="." index="152"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.114142, -1.3961, 0.116057)
+
+[node name="t-proximal-phalanx_007_R" parent="." index="153"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.131253, -1.39526, 0.10974)
+
+[node name="t-proximal-phalanx_008_R" parent="." index="154"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.146983, -1.39606, 0.0976319)
+
+[node name="t-proximal-phalanx_009_R" parent="." index="155"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.162038, -1.40074, 0.0827047)
+
+[node name="t-intermediate-phalanx_004_R" parent="." index="156"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11947, -1.40205, 0.141768)
+
+[node name="t-intermediate-phalanx_005_R" parent="." index="157"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.137129, -1.40069, 0.134298)
+
+[node name="t-intermediate-phalanx_006_R" parent="." index="158"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.153969, -1.40119, 0.119968)
+
+[node name="t-distal-phalanx_006_R" parent="." index="159"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.157246, -1.40501, 0.132328)
+
+[node name="t-distal-phalanx_007_R" parent="." index="160"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14067, -1.40489, 0.149002)
+
+[node name="t-distal-phalanx_008_R" parent="." index="161"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.123035, -1.40616, 0.156875)
+
+[node name="t-distal-phalanx_009_R" parent="." index="162"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0957585, -1.4051, 0.14571)

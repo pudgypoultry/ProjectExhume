@@ -1,0 +1,473 @@
+[gd_scene load_steps=2 format=3 uid="uid://c766c0gojaelp"]
+
+[ext_resource type="PackedScene" uid="uid://c87fnx5u3kdxv" path="res://Assets/Blender/Scenes/final-skeleton.glb" id="1_xok2w"]
+
+[node name="final-skeleton" instance=ExtResource("1_xok2w")]
+
+[node name="cranium" parent="." index="0"]
+visible = false
+
+[node name="mandible" parent="." index="1"]
+visible = false
+
+[node name="lateral-incisor_L" parent="." index="2"]
+visible = false
+
+[node name="central-incisor_L" parent="." index="3"]
+visible = false
+
+[node name="cuspid_L" parent="." index="4"]
+visible = false
+
+[node name="first-premolar_L" parent="." index="5"]
+visible = false
+
+[node name="second-premolar_L" parent="." index="6"]
+visible = false
+
+[node name="first-molar_L" parent="." index="7"]
+visible = false
+
+[node name="second-molar_L" parent="." index="8"]
+visible = false
+
+[node name="third-molar_L" parent="." index="9"]
+visible = false
+
+[node name="retopo-tooth-lower_018_L" parent="." index="10"]
+visible = false
+
+[node name="retopo-tooth-lower_019_L" parent="." index="11"]
+visible = false
+
+[node name="retopo-tooth-lower_020_L" parent="." index="12"]
+visible = false
+
+[node name="retopo-tooth-lower_021_L" parent="." index="13"]
+visible = false
+
+[node name="retopo-tooth-lower_022_L" parent="." index="14"]
+visible = false
+
+[node name="retopo-tooth-lower_023_L" parent="." index="15"]
+visible = false
+
+[node name="retopo-tooth-lower_025_L" parent="." index="16"]
+visible = false
+
+[node name="retopo-tooth-lower_026_L" parent="." index="17"]
+visible = false
+
+[node name="third-molar_R" parent="." index="18"]
+visible = false
+
+[node name="lateral-incisor_R" parent="." index="19"]
+visible = false
+
+[node name="central-incisor_R" parent="." index="20"]
+visible = false
+
+[node name="cuspid_R" parent="." index="21"]
+visible = false
+
+[node name="first-premolar_R" parent="." index="22"]
+visible = false
+
+[node name="second-premolar_R" parent="." index="23"]
+visible = false
+
+[node name="first-molar_R" parent="." index="24"]
+visible = false
+
+[node name="second-molar_R" parent="." index="25"]
+visible = false
+
+[node name="retopo-tooth-lower_018_R" parent="." index="26"]
+visible = false
+
+[node name="retopo-tooth-lower_019_R" parent="." index="27"]
+visible = false
+
+[node name="retopo-tooth-lower_020_R" parent="." index="28"]
+visible = false
+
+[node name="retopo-tooth-lower_021_R" parent="." index="29"]
+visible = false
+
+[node name="retopo-tooth-lower_022_R" parent="." index="30"]
+visible = false
+
+[node name="retopo-tooth-lower_023_R" parent="." index="31"]
+visible = false
+
+[node name="retopo-tooth-lower_025_R" parent="." index="32"]
+visible = false
+
+[node name="retopo-tooth-lower_026_R" parent="." index="33"]
+visible = false
+
+[node name="spine-c1" parent="." index="34"]
+visible = false
+
+[node name="spine-c2" parent="." index="35"]
+visible = false
+
+[node name="spine-c3" parent="." index="36"]
+visible = false
+
+[node name="spine-c4" parent="." index="37"]
+visible = false
+
+[node name="spine-c5" parent="." index="38"]
+visible = false
+
+[node name="spine-c6" parent="." index="39"]
+visible = false
+
+[node name="spine-c7" parent="." index="40"]
+visible = false
+
+[node name="spine-t4" parent="." index="41"]
+visible = false
+
+[node name="spine-t3" parent="." index="42"]
+visible = false
+
+[node name="spine-t2" parent="." index="43"]
+visible = false
+
+[node name="spine-t1" parent="." index="44"]
+visible = false
+
+[node name="spine-t5" parent="." index="45"]
+visible = false
+
+[node name="spine-t6" parent="." index="46"]
+visible = false
+
+[node name="spine-t7" parent="." index="47"]
+visible = false
+
+[node name="spine-t8" parent="." index="48"]
+visible = false
+
+[node name="spine-t9" parent="." index="49"]
+visible = false
+
+[node name="spine-t10" parent="." index="50"]
+visible = false
+
+[node name="spine-t11" parent="." index="51"]
+visible = false
+
+[node name="spine-t12" parent="." index="52"]
+visible = false
+
+[node name="spine-l1" parent="." index="53"]
+visible = false
+
+[node name="spine-l2" parent="." index="54"]
+visible = false
+
+[node name="spine-l3" parent="." index="55"]
+visible = false
+
+[node name="spine-l4" parent="." index="56"]
+visible = false
+
+[node name="spine-l5" parent="." index="57"]
+visible = false
+
+[node name="ribs" parent="." index="58"]
+visible = false
+
+[node name="clavicle_L" parent="." index="59"]
+transform = Transform3D(0.820272, 0, -0.571974, 0, 1, 0, 0.571974, 0, 0.820272, 0.106782, 1.52564, -0.0642065)
+
+[node name="clavicle_R" parent="." index="60"]
+visible = false
+
+[node name="scapula_R" parent="." index="62"]
+visible = false
+
+[node name="pelvis" parent="." index="63"]
+visible = false
+
+[node name="humerus_L" parent="." index="64"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.212826, 1.31161, -0.0928596)
+
+[node name="humerus_R" parent="." index="65"]
+visible = false
+
+[node name="ulna_L" parent="." index="66"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.264766, 1.04353, -0.105391)
+
+[node name="ulna_R" parent="." index="67"]
+visible = false
+
+[node name="radius_L" parent="." index="68"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.310754, 1.00176, -0.093903)
+
+[node name="radius_R" parent="." index="69"]
+visible = false
+
+[node name="carpals_L" parent="." index="70"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.324392, 0.862965, -0.0916813)
+
+[node name="metacarpals_010_L" parent="." index="71"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.365584, 0.813176, -0.0898856)
+
+[node name="metacarpals_011_L" parent="." index="72"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.347122, 0.806745, -0.0894845)
+
+[node name="metacarpals_012_L" parent="." index="73"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.327293, 0.804832, -0.0890891)
+
+[node name="metacarpals_013_L" parent="." index="74"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.309311, 0.805856, -0.089416)
+
+[node name="metacarpals_014_L" parent="." index="75"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.378709, 0.848435, -0.0735749)
+
+[node name="c-proximal-phalanx_010_L" parent="." index="76"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.406572, 0.816119, -0.0588772)
+
+[node name="c-proximal-phalanx_011_L" parent="." index="77"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.395601, 0.753031, -0.0788706)
+
+[node name="c-proximal-phalanx_012_L" parent="." index="78"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.365722, 0.745301, -0.0782707)
+
+[node name="c-proximal-phalanx_013_L" parent="." index="79"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.337241, 0.746739, -0.0788383)
+
+[node name="c-proximal-phalanx_014_L" parent="." index="80"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.310037, 0.754558, -0.0802619)
+
+[node name="c-intermediate-phalanx_008_L" parent="." index="81"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.413942, 0.721912, -0.0610051)
+
+[node name="c-intermediate-phalanx_009_L" parent="." index="82"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.378123, 0.706477, -0.0591678)
+
+[node name="c-intermediate-phalanx_010_L" parent="." index="83"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.345336, 0.708811, -0.0597996)
+
+[node name="c-intermediate-phalanx_011_L" parent="." index="84"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.310369, 0.720979, -0.0638555)
+
+[node name="c-distal-phalanx_010_L" parent="." index="85"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.421656, 0.790456, -0.0463663)
+
+[node name="c-distal-phalanx_011_L" parent="." index="86"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.423075, 0.704861, -0.0420713)
+
+[node name="c-distal-phalanx_012_L" parent="." index="87"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.385465, 0.686147, -0.0371965)
+
+[node name="c-distal-phalanx_013_L" parent="." index="88"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.350216, 0.689676, -0.0382489)
+
+[node name="c-distal-phalanx_014_L" parent="." index="89"]
+transform = Transform3D(0.982839, 0.184466, 0, -0.184466, 0.982839, 0, 0, 0, 1, 0.310501, 0.702158, -0.0459469)
+
+[node name="carpals_R" parent="." index="90"]
+visible = false
+
+[node name="metacarpals_005_R" parent="." index="91"]
+visible = false
+
+[node name="metacarpals_006_R" parent="." index="92"]
+visible = false
+
+[node name="metacarpals_007_R" parent="." index="93"]
+visible = false
+
+[node name="metacarpals_008_R" parent="." index="94"]
+visible = false
+
+[node name="metacarpals_009_R" parent="." index="95"]
+visible = false
+
+[node name="c-proximal-phalanx_005_R" parent="." index="96"]
+visible = false
+
+[node name="c-proximal-phalanx_006_R" parent="." index="97"]
+visible = false
+
+[node name="c-proximal-phalanx_007_R" parent="." index="98"]
+visible = false
+
+[node name="c-proximal-phalanx_008_R" parent="." index="99"]
+visible = false
+
+[node name="c-proximal-phalanx_009_R" parent="." index="100"]
+visible = false
+
+[node name="c-intermediate-phalanx_004_R" parent="." index="101"]
+visible = false
+
+[node name="c-intermediate-phalanx_005_R" parent="." index="102"]
+visible = false
+
+[node name="c-intermediate-phalanx_006_R" parent="." index="103"]
+visible = false
+
+[node name="c-intermediate-phalanx_007_R" parent="." index="104"]
+visible = false
+
+[node name="c-distal-phalanx_005_R" parent="." index="105"]
+visible = false
+
+[node name="c-distal-phalanx_006_R" parent="." index="106"]
+visible = false
+
+[node name="c-distal-phalanx_007_R" parent="." index="107"]
+visible = false
+
+[node name="c-distal-phalanx_008_R" parent="." index="108"]
+visible = false
+
+[node name="c-distal-phalanx_009_R" parent="." index="109"]
+visible = false
+
+[node name="femur_L" parent="." index="110"]
+visible = false
+
+[node name="femur_R" parent="." index="111"]
+visible = false
+
+[node name="patella_L" parent="." index="112"]
+visible = false
+
+[node name="patella_R" parent="." index="113"]
+visible = false
+
+[node name="tibia_L" parent="." index="114"]
+visible = false
+
+[node name="tibia_R" parent="." index="115"]
+visible = false
+
+[node name="fibula_L" parent="." index="116"]
+visible = false
+
+[node name="fibula_R" parent="." index="117"]
+visible = false
+
+[node name="tarsus_L" parent="." index="118"]
+visible = false
+
+[node name="metatarsal-01_010_L" parent="." index="119"]
+visible = false
+
+[node name="metatarsal-01_011_L" parent="." index="120"]
+visible = false
+
+[node name="metatarsal-01_012_L" parent="." index="121"]
+visible = false
+
+[node name="metatarsal-01_013_L" parent="." index="122"]
+visible = false
+
+[node name="metatarsal-01_014_L" parent="." index="123"]
+visible = false
+
+[node name="t-proximal-phalanx_010_L" parent="." index="124"]
+visible = false
+
+[node name="t-proximal-phalanx_011_L" parent="." index="125"]
+visible = false
+
+[node name="t-proximal-phalanx_012_L" parent="." index="126"]
+visible = false
+
+[node name="t-proximal-phalanx_013_L" parent="." index="127"]
+visible = false
+
+[node name="t-proximal-phalanx_014_L" parent="." index="128"]
+visible = false
+
+[node name="t-intermediate-phalanx_008_L" parent="." index="129"]
+visible = false
+
+[node name="t-intermediate-phalanx_009_L" parent="." index="130"]
+visible = false
+
+[node name="t-intermediate-phalanx_010_L" parent="." index="131"]
+visible = false
+
+[node name="t-intermediate-phalanx_011" parent="." index="132"]
+visible = false
+
+[node name="t-distal-phalanx_010_L" parent="." index="133"]
+visible = false
+
+[node name="t-distal-phalanx_011_L" parent="." index="134"]
+visible = false
+
+[node name="t-distal-phalanx_012_L" parent="." index="135"]
+visible = false
+
+[node name="t-distal-phalanx_013_L" parent="." index="136"]
+visible = false
+
+[node name="t-distal-phalanx_014_L" parent="." index="137"]
+visible = false
+
+[node name="t-distal-phalanx_005_R" parent="." index="138"]
+visible = false
+
+[node name="tarsus_R" parent="." index="139"]
+visible = false
+
+[node name="metatarsal-01_005_R" parent="." index="140"]
+visible = false
+
+[node name="metatarsal-01_006_R" parent="." index="141"]
+visible = false
+
+[node name="metatarsal-01_007_R" parent="." index="142"]
+visible = false
+
+[node name="metatarsal-01_008_R" parent="." index="143"]
+visible = false
+
+[node name="metatarsal-01_009_R" parent="." index="144"]
+visible = false
+
+[node name="t-proximal-phalanx_005_R" parent="." index="145"]
+visible = false
+
+[node name="t-proximal-phalanx_006_R" parent="." index="146"]
+visible = false
+
+[node name="t-proximal-phalanx_007_R" parent="." index="147"]
+visible = false
+
+[node name="t-proximal-phalanx_008_R" parent="." index="148"]
+visible = false
+
+[node name="t-proximal-phalanx_009_R" parent="." index="149"]
+visible = false
+
+[node name="t-intermediate-phalanx_004_R" parent="." index="150"]
+visible = false
+
+[node name="t-intermediate-phalanx_005_R" parent="." index="151"]
+visible = false
+
+[node name="t-intermediate-phalanx_006_R" parent="." index="152"]
+visible = false
+
+[node name="t-distal-phalanx_006_R" parent="." index="153"]
+visible = false
+
+[node name="t-distal-phalanx_007_R" parent="." index="154"]
+visible = false
+
+[node name="t-distal-phalanx_008_R" parent="." index="155"]
+visible = false
+
+[node name="t-distal-phalanx_009_R" parent="." index="156"]
+visible = false
