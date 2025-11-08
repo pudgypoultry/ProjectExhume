@@ -1,3 +1,4 @@
 Stylized Sky Shader - Gotibo
 Thunder Sound - BlenderTimer
 Shaddy - 3D Coffins - https://sketchfab.com/3d-models/wooden-coffins-free-23f49c5ab417455a9d8fca828919354e
+markdibarry - Arbitrary Color Reduction and Palette Ordered Dithering - https://godotshaders.com/shader/arbitrary-color-reduction-ordered-dithering

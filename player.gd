@@ -10,6 +10,7 @@ class_name PlayerController
 @export var voxelTerrain : VoxelLodTerrain
 @export var digRay : RayCast3D
 @export var digMarker : Node3D
+@export var digSize : float = 1.5
 
 @onready
 var voxelTool : VoxelTool = voxelTerrain.get_voxel_tool()
@@ -70,11 +71,11 @@ func Rotation(event):
 func Dig():
 	if tryingToDig && digRay.is_colliding():
 		voxelTool.mode = VoxelTool.MODE_REMOVE
-		voxelTool.do_sphere(digRay.get_collision_point(), 2.0)
+		voxelTool.do_sphere(digRay.get_collision_point(), digSize)
 		tryingToDig = false
 	elif tryingToDig && !digRay.is_colliding():
 		voxelTool.mode = VoxelTool.MODE_REMOVE
-		voxelTool.do_sphere(digMarker.global_position, 2.0)
+		voxelTool.do_sphere(digMarker.global_position, digSize)
 		tryingToDig = false
 
 
