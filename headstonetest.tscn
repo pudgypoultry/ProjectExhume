@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://col677nykydgr"]
+
+[ext_resource type="PackedScene" uid="uid://cm43uc0k2k734" path="res://Assets/Blender/Headstones/Headstone.glb" id="1_qu1rx"]
+[ext_resource type="Material" path="res://Assets/Blender/Headstones/StoneMaterial/Cobblestone2.tres" id="2_x8xgq"]
+
+[node name="Headstone" instance=ExtResource("1_qu1rx")]
+
+[node name="HeadstoneProper" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_x8xgq")
